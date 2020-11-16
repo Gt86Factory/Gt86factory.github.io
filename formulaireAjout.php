@@ -3,6 +3,7 @@
    <head> 
       <title>Blog</title> 
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+      <link rel="stylesheet" type="text/css" href="style1.css">
    </head> 
 <body> 
    <h2>Nouvel article</h2> 
