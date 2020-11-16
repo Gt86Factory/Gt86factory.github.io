@@ -41,11 +41,11 @@ body {
 .btn-add-comment{
 	font-size: 1em;
     padding: 8px 30px;
-    background-color: #089cbd;
+    background-color: #35322A;
     color: #ffffff;
     cursor: pointer;
     border-radius: 3px;
-    border: #0495b1 1px solid;
+    border: white 1px solid;
 
 }
 .form-field{
