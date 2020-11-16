@@ -1,8 +1,8 @@
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO"; 
-DROP TABLE IF EXISTS Article; 
-CREATE TABLE Article ( 
-  Id int(11) NOT NULL AUTO_INCREMENT, 
+DROP TABLE IF EXISTS article; 
+CREATE TABLE article ( 
+  id int(11) NOT NULL AUTO_INCREMENT, 
   Titre varchar(25) NOT NULL, 
   Date datetime NOT NULL, 
   Commentaire text NOT NULL, 
