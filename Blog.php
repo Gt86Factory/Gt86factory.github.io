@@ -31,8 +31,8 @@
          if ($ligne['Photo'] != "") { 
             echo "<img src='photos/".$ligne['Photo']."' width='200px' height='200px'/>";
          } 
-         echo "<a href='formulaireDelete.php?id=".$ligne['id']."'><input type=submit value=Delete></a>";
-         echo "<a href='formulaireEdit.php?id=".$ligne['id']."'><input type=submit value=Edit></a>";
+         echo "<a href='formulaireDelete.php?id=".$ligne['Id']."'><input type=submit value=Delete></a>";
+         echo "<a href='formulaireEdit.php?id=".$ligne['Id']."'><input type=submit value=Edit></a>";
          ?>       
          <?php
          echo "<hr />";   
