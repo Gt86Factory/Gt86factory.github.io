@@ -28,4 +28,3 @@ ALTER TABLE `tbl_user_comments`
 --
 ALTER TABLE `tbl_user_comments`
   MODIFY `id` int(50) NOT NULL AUTO_INCREMENT;
-COMMIT;
