@@ -3,12 +3,111 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"> 
    <head> 
       <title>Blog</title> 
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+      <meta charset="utf-8">  
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="bodystyle.css">
       <link rel="stylesheet" type="text/css" href="style.css">
-      <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+      <link rel="stylesheet" type="text/css" href=".\bootstrap.css">
+       <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>    
+      <script type="text/javascript"  src= "bootstrap.js"></script>
    </head> 
-<body> 
-   <h2>Blog</h2> 
+<body style="background-color:#ebe7e0;">
+    <div class="container-fluid">
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+  <a id="icon" href="Blog.php"><i class="fa fa-archive" aria-hidden="true" alt="Acceuil"></i>Acceuil</a>
+      </li>
+      <li class="nav-item active">
+  <a id="icon" href="formulaireAjout.php"><i class="fa fa-plus-circle" aria-hidden="true" alt="Nouveau Article"></i>Nouveau Article</a>
+      </li>
+      <li class="nav-item active">
+  <a id="icon" href="#frmComment"><i class="fa fa-arrow-circle-down" aria-hidden="true" alt="Bas de page"></i>Commentaire</a>
+      </li>
+      <li class="nav-item active">
+  <a id="icon" href="#bas"><i class="fa fa-arrow-circle-down" aria-hidden="true" alt="Bas de page"></i>Bas de page</a>
+      </li>
+    </ul>  
+</div>
+</nav>
+   <svg width='100%' height='200'>
+  <filter id='money'>
+    <feMorphology in='SourceGraphic' operator='dilate' radius='2' result='expand'/>
+
+    <feOffset in='expand' dx='1' dy='1' result='shadow_1'/>
+    <feOffset in='expand' dx='2' dy='2' result='shadow_2'/>
+    <feOffset in='expand' dx='3' dy='3' result='shadow_3'/>
+    <feOffset in='expand' dx='4' dy='4' result='shadow_4'/>
+    <feOffset in='expand' dx='5' dy='5' result='shadow_5'/>
+    <feOffset in='expand' dx='6' dy='6' result='shadow_6'/>
+    <feOffset in='expand' dx='7' dy='7' result='shadow_7'/>
+
+    <feMerge result='shadow'>
+      <feMergeNode in='expand'/>
+      <feMergeNode in='shadow_1'/>
+      <feMergeNode in='shadow_2'/>
+      <feMergeNode in='shadow_3'/>
+      <feMergeNode in='shadow_4'/>
+      <feMergeNode in='shadow_5'/>
+      <feMergeNode in='shadow_6'/>
+      <feMergeNode in='shadow_7'/>
+    </feMerge>
+
+    <feFlood flood-color='#ebe7e0'/>
+    <feComposite in2='shadow' operator='in' result='shadow'/>
+
+    <feMorphology in='shadow' operator='dilate' radius='1' result='border'/>
+    <feFlood flood-color='#35322a' result='border_color'/>
+    <feComposite in2='border' operator='in' result='border'/>
+
+    <feOffset in='border' dx='1' dy='1' result='secondShadow_1'/>
+    <feOffset in='border' dx='2' dy='2' result='secondShadow_2'/>
+    <feOffset in='border' dx='3' dy='3' result='secondShadow_3'/>
+    <feOffset in='border' dx='4' dy='4' result='secondShadow_4'/>
+    <feOffset in='border' dx='5' dy='5' result='secondShadow_5'/>
+    <feOffset in='border' dx='6' dy='6' result='secondShadow_6'/>
+    <feOffset in='border' dx='7' dy='7' result='secondShadow_7'/>
+    <feOffset in='border' dx='8' dy='8' result='secondShadow_8'/>
+    <feOffset in='border' dx='9' dy='9' result='secondShadow_9'/>
+    <feOffset in='border' dx='10' dy='10' result='secondShadow_10'/>
+    <feOffset in='border' dx='11' dy='11' result='secondShadow_11'/>
+
+    <feMerge result='secondShadow'>
+      <feMergeNode in='border'/>
+      <feMergeNode in='secondShadow_1'/>
+      <feMergeNode in='secondShadow_2'/>
+      <feMergeNode in='secondShadow_3'/>
+      <feMergeNode in='secondShadow_4'/>
+      <feMergeNode in='secondShadow_5'/>
+      <feMergeNode in='secondShadow_6'/>
+      <feMergeNode in='secondShadow_7'/>
+      <feMergeNode in='secondShadow_8'/>
+      <feMergeNode in='secondShadow_9'/>
+      <feMergeNode in='secondShadow_10'/>
+      <feMergeNode in='secondShadow_11'/>
+    </feMerge>
+
+    <feImage x='0' y='0' width='100%' height='200' xlink:href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/78779/stripes.svg'/>
+    <feComposite in2='secondShadow' operator='in' result='secondShadow'/>
+
+    <feMerge>
+      <feMergeNode in='secondShadow'/>
+      <feMergeNode in='border'/>
+      <feMergeNode in='shadow'/>
+      <feMergeNode in='SourceGraphic'/>
+    </feMerge>
+  </filter>
+
+  <text dominant-baseline='middle' text-anchor='middle' x='50%' y='50%'>
+  SHIT POSTING !!!
+  </text>
+</svg>
+
    <hr /> 
    <?php 
    $connect = mysqli_connect("127.0.0.1", "root", "", "blog"); 
@@ -26,14 +125,19 @@
       while ($ligne = mysqli_fetch_assoc($resultat)) { 
          $dt_debut = date_create_from_format('Y-m-d H:i:s', $ligne['Date']); 
          echo "<h3>".$ligne['Titre']."</h3>"; 
-         echo "<h4>Le ".$dt_debut->format('d/m/Y H:i:s')."</h4>"; 
-         echo "<div style='width:400px'>".$ligne['Commentaire']." </div>"; 
+         echo "<h4>Le ".$dt_debut->format('d/m/Y H:i:s')."</h4>";
          if ($ligne['Photo'] != "") { 
-            echo "<img src='photos/".$ligne['Photo']."' width='200px' height='200px'/>";
-         } 
+            echo "<img src='photos/".$ligne['Photo']."' width='500px' height='500px'/>";
+             echo "<div id='text'>".$ligne['Commentaire']." </div>"; 
+         }  
+         
+         ?>
+         <div id="bouton">
+          <?php
          echo "<a href='formulaireDelete.php?id=".$ligne['id']."'><input type=submit value=Delete></a>";
          echo "<a href='formulaireEdit.php?id=".$ligne['id']."'><input type=submit value=Edit></a>";
-         ?>       
+         ?>
+         </div>       
          <?php
          echo "<hr />";   
 
@@ -44,7 +148,7 @@
     <form action=" " id="frmComment" method="post">
       <div class="row">
         <label> Name: </label> <span id="name-info"></span><input class="form-field" id="name"
-          type="text" name="user"> 
+          type="text" name="user">
       </div>
       <div class="row">
         <label for="mesg"> Message : <span id="message-info"></span></label>
@@ -81,6 +185,7 @@ while ($row = $result->fetch_array(MYSQLI_ASSOC)) // using prepared staement
         <div class="delete" name="delete" id="delete"<?php echo $row['id'];?>
           onclick="deletecomment(<?php echo $row['id'];?>)">Delete</div>
       </div>
+</div>
 <?php 
 }
 ?>
@@ -157,8 +262,8 @@ while ($row = $result->fetch_array(MYSQLI_ASSOC)) // using prepared staement
     });
      });
     </script>
+    <div id="bas"></div>
    <br /> 
 </div>
-   <a href="formulaireAjout.php">retour à la page d'insertion</a>
 </body> 
 </html>

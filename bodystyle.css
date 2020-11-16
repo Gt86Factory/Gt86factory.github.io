@@ -1,0 +1,83 @@
+body {margin:0px;}
+
+.container-fluid {padding-right:0px;
+                  padding-left:0px;}
+
+@media (min-width: 768px) { nav{ font-size:2em } }
+@media (min-width: 994px) { nav{ font-size:1.2em } }
+@media (min-width: 1440px) { nav{ font-size:1.7em } }
+@media (min-width: 1800px) { nav{ font-size:2.2em } }
+
+@media (min-width: 320px) { #text{font-size:1.7em } }
+@media (min-width: 425px) { #text{font-size:1.3em } }
+@media (min-width: 768px) { #text{width:440px  } }
+@media (min-width: 1024px) { #text{width:490px } }
+@media (min-width: 1440px) { #text{width:900px } }
+@media (min-width: 1800px) { #text{ width:1370px } }
+
+@media (min-width: 320px) { h3{margin-left:20%; } }
+@media (min-width: 1440px) { h3{margin-left:15%; } }
+
+
+@media (min-width: 320px) { h4{margin-left:10%; } }
+
+@media (min-width: 320px) { text{ font-size:100px} }
+@media (min-width: 425px) { text{font-size:100px} }
+@media (min-width: 768px) { text{width:100px } }
+@media (min-width: 1024px) { text{width:100px } }
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
+
+svg {
+        background-image:url("https://www.wallpapertip.com/wmimgs/50-508018_ranch-western-wallpaper-border-hj6709bd-cowboy-boot-country.jpg");
+}
+
+text {
+  fill: #35322a;
+  filter: url('#money');
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-weight: 900;
+}
+
+html {
+  align-items: center;
+  background: #ebe7e0;
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+}
+
+.navbar{	
+            background-color: #35322A;
+  			font-family:'Fira Code', monospace;
+  			width: 100%;}
+
+#icon { font-weight:100%;
+		font-size:100%;
+		margin-left:5em;
+		color:white;
+		text-decoration:none;
+		justify-content: center;
+    	flex-wrap: wrap;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191;}       
+
+#bouton a input {font-size: 1em;
+    	padding: 8px 30px;
+   	 	background-color: #35322A;
+    	color: #ffffff;
+    	cursor: pointer;
+    	border-radius: 3px;
+    	border: white 1px solid;
+    	margin-left:15px;
+    	margin-top:15px;}
+
+
+#text{ 	
+            float:right; }
+
+.demo-container {background-image:url("https://www.wallpapertip.com/wmimgs/42-423207_country-music-guitar-country-western-music-background.jpg");}
+
+
